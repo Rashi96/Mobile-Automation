@@ -19,7 +19,7 @@ public class ProductsPage {
 	public WebElement lblProducts;
 
 	@AndroidFindBy(id="com.androidsample.generalstore:id/productName")
-	public List<WebElement> listOfProducts;
+	public List<WebElement> lblListOfProducts;
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/productAddCart")
 	public List<WebElement> addToCartList;
@@ -31,16 +31,20 @@ public class ProductsPage {
 	public WebElement lblProduct;
 	
 	@AndroidFindBy(xpath="//*[@text='ADD TO CART']")
-	public List<WebElement> product1;
+	public List<WebElement> btnproduct1;
 	
 	@AndroidFindBy(xpath="//*[@text='ADD TO CART']")
-	public List<WebElement> product2;
+	public List<WebElement> btnproduct2;
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/productPrice")
-	public List<WebElement> productprice;
+	public List<WebElement> lblproductprice;
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/totalAmountLbl")
-	public WebElement totalamount;
+	public WebElement lbltotalAmount;
+	
+	
+	
+	
 	
 	
 	

@@ -6,7 +6,6 @@
   </listeners>
   <test name="GeneralStore_Tc_1">
     <classes>
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
       <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2"/>
     </classes>
   </test> <!-- GeneralStore_Tc_1 -->
