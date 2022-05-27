@@ -19,7 +19,7 @@ public class GeneralStore_Tc_2 extends BaseClass {
 	public static String productName = "Jordan 6 Rings";
 	
 	@Test
-	public void validateTotalAmount() throws InterruptedException, MalformedURLException{
+	public void validateAddToCartOption() throws InterruptedException, MalformedURLException{
 		
 		ProductsPage pp = new ProductsPage(driver);
 		
@@ -47,7 +47,7 @@ public class GeneralStore_Tc_2 extends BaseClass {
 	     	    
 	     String productInCart = pp.lblProduct.getText();
 
-	     Assert.assertEquals(productName, productInCart);
+	     Assert.assertEquals(productInCart, productName);
 	     System.out.println("Validation success. Expected product is added to cart");
 		
 	}
