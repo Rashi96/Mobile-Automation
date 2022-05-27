@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.MobileAutomationDemo.PageObjects.ProductsPage;
+import com.MobileAutomationDemo.Utilities.Utilities;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
@@ -26,13 +27,14 @@ public class GeneralStore_Tc_2 extends BaseClass {
 		GeneralStore_Tc_1 tc1 = new GeneralStore_Tc_1();
 	    tc1.productsPageNavigation();
 	    
-	    driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\"com.androidsample.generalstore:id/rvProductList\")).scrollIntoView(new UiSelector().textMatches(\"" + productName + "\").instance(0))"));
-		
-	    int count = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
-	     	     
+	    Utilities u=new Utilities(driver);
+	    u.scrollToProduct(productName);
+	    
+	    int count =pp.lblListOfProducts.size();
+	        	     
 	    for(int i=0; i<count; i++){
 	    	
-	    	String text=pp.listOfProducts.get(i).getText();
+	    	String text=pp.lblListOfProducts.get(i).getText();
 
 	    	if(text.equalsIgnoreCase(productName)){
 

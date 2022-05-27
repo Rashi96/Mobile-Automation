@@ -19,13 +19,13 @@ public class GeneralStorePage {
 	public WebElement btnLetsShop;
 	
 	@AndroidFindBy(xpath="//android.widget.Toast[1]")
-	public WebElement labelToastMsg;
+	public WebElement lblToastMsg;
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/spinnerCountry")
-	public WebElement dropdownCountry;
+	public WebElement ddCountry;
 	
 	@AndroidFindBy(xpath="//*[@text='Australia']")
-	public WebElement labelCountry;
+	public WebElement lblCountry;
 	
 	@AndroidFindBy(id="com.androidsample.generalstore:id/nameField")
 	public WebElement txtName;
@@ -34,3 +34,4 @@ public class GeneralStorePage {
 	public WebElement radioGender;
 
 }
+

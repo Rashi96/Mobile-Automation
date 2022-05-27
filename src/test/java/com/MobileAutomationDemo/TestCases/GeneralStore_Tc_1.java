@@ -19,7 +19,7 @@ public class GeneralStore_Tc_1 extends BaseClass{
 		
 		gsp.btnLetsShop.click();
 		
-		String toastMessage = gsp.labelToastMsg.getAttribute("name");
+		String toastMessage = gsp.lblToastMsg.getAttribute("name");
 		Assert.assertEquals(expectedMessage, toastMessage);
 		System.out.println("Validation success. Expected toast message displayed");
 		
@@ -30,12 +30,12 @@ public class GeneralStore_Tc_1 extends BaseClass{
 		
 		GeneralStorePage gsp = new GeneralStorePage(driver);
 		
-		gsp.dropdownCountry.click();
+		gsp.ddCountry.click();
 		
 		Utilities u=new Utilities(driver);
-	    u.scrollToText(country);
+	    u.scrollToCountry(country);
 	
-		gsp.labelCountry.click();
+		gsp.lblCountry.click();
 		
 		gsp.txtName.sendKeys(name);
 		driver.hideKeyboard();
