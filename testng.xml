@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Mobile Automation Demo">
+
+	<listeners>
+		<listener class-name="com.MobileAutomationDemo.Utilities.Reporting"></listener>
+	</listeners>
+
+  <test name="GeneralStore_Tc_1">
+  
+    <classes>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

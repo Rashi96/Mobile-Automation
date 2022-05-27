@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mobile Automation Demo]">
+  <listeners>
+    <listener class-name="com.MobileAutomationDemo.Utilities.Reporting"/>
+  </listeners>
+  <test name="GeneralStore_Tc_1">
+    <classes>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2"/>
+    </classes>
+  </test> <!-- GeneralStore_Tc_1 -->
+</suite> <!-- Failed suite [Mobile Automation Demo] -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.AppiumFramework.TestCases.ecommerce_tc_1"/>
+      <class name="com.AppiumFramework.TestCases.Ecommerce_Tc_2"/>
+      <class name="com.AppiumFramework.Utilities.Reporting"/>
+      <class name="com.AppiumFramework.PageObjects.EcommercePO"/>
+      <class name="com.AppiumFramework.Utilities.ReadConfig"/>
+      <class name="com.AppiumFramework.TestCases.BaseClass"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.AppiumFramework.TestCases.ecommerce_tc_1">
+        <methods>
+          <include name="setCapabilities"/>
+          <include name="startServer"/>
+          <include name="stopServer"/>
+          <include name="sampleMethod"/>
+        </methods>
+      </class> <!-- com.AppiumFramework.TestCases.ecommerce_tc_1 -->
+      <class name="com.AppiumFramework.TestCases.Ecommerce_Tc_2">
+        <methods>
+          <include name="setCapabilities"/>
+        </methods>
+      </class> <!-- com.AppiumFramework.TestCases.Ecommerce_Tc_2 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
