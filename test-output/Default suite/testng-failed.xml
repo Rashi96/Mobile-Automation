@@ -3,29 +3,50 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.AppiumFramework.TestCases.ecommerce_tc_1"/>
-      <class name="com.AppiumFramework.TestCases.Ecommerce_Tc_2"/>
-      <class name="com.AppiumFramework.Utilities.Reporting"/>
-      <class name="com.AppiumFramework.PageObjects.EcommercePO"/>
-      <class name="com.AppiumFramework.Utilities.ReadConfig"/>
-      <class name="com.AppiumFramework.TestCases.BaseClass"/>
+      <class name="com.MobileAutomationDemo.PageObjects.ProductsPage"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
+      <class name="com.MobileAutomationDemo.Utilities.Reporting"/>
+      <class name="com.MobileAutomationDemo.PageObjects.CheckOutPage"/>
+      <class name="com.MobileAutomationDemo.Utilities.Utilities"/>
+      <class name="com.MobileAutomationDemo.PageObjects.GeneralStorePage"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_5"/>
+      <class name="com.MobileAutomationDemo.TestCases.BaseClass"/>
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_4"/>
+      <class name="com.MobileAutomationDemo.Utilities.ReadConfig"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.AppiumFramework.TestCases.ecommerce_tc_1">
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1">
         <methods>
-          <include name="setCapabilities"/>
+          <include name="productsPageNavigation"/>
+          <include name="validateToastMessage"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_5">
+        <methods>
+          <include name="navigateToTheWebview"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_5 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2">
+        <methods>
+          <include name="validateAddToCartOption"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_4">
+        <methods>
+          <include name="checkingTheLongPressFunction"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_4 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3">
+        <methods>
           <include name="startServer"/>
-          <include name="stopServer"/>
-          <include name="sampleMethod"/>
-        </methods>
-      </class> <!-- com.AppiumFramework.TestCases.ecommerce_tc_1 -->
-      <class name="com.AppiumFramework.TestCases.Ecommerce_Tc_2">
-        <methods>
+          <include name="validateTotalAmount"/>
           <include name="setCapabilities"/>
         </methods>
-      </class> <!-- com.AppiumFramework.TestCases.Ecommerce_Tc_2 -->
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -19,7 +19,7 @@
 	<build>
   <resources>
    <resource>
-        <directory>src/main/java/resources</directory>
+        <directory>src/test/java/com.MobileAutomationDemo.Utilities</directory>
         <filtering>true</filtering>
       </resource>
       
@@ -53,14 +53,7 @@
 	<dependency>
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
-      <version>8.0.0</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-	<dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.0.0</version>
+      <version>7.0.0</version>
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -68,7 +61,6 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>6.9.10</version>
-      <scope>test</scope>
 	</dependency>
 	
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
@@ -112,6 +104,12 @@
 	  <artifactId>extentreports</artifactId>
 	  <version>4.0.9</version>
 	</dependency>
+	
+	<dependency>
+   <groupId>org.seleniumhq.selenium</groupId>
+   <artifactId>selenium-remote-driver</artifactId>
+   <version>3.14.0</version>
+ </dependency>
     
   </dependencies>
 </project>

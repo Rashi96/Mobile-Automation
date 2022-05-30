@@ -1,6 +1,6 @@
 package com.MobileAutomationDemo.Utilities;
 
-import io.appium.java_client.AppiumBy;
+//import io.appium.java_client.AppiumBy;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 
@@ -29,7 +29,7 @@ public class Utilities{
 	
 	public void tapTheCheckbox(){
 
-		driver.findElement(AppiumBy.androidUIAutomator("text(\"Send me e-mails on discounts related to selected products in future\")"));
+		//driver.findElement(AppiumBy.androidUIAutomator("text(\"Send me e-mails on discounts related to selected products in future\")"));
 	}
 	
 	

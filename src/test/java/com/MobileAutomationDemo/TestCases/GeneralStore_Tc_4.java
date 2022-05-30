@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import com.MobileAutomationDemo.PageObjects.CheckOutPage;
 import com.MobileAutomationDemo.PageObjects.ProductsPage;
 import com.MobileAutomationDemo.Utilities.Utilities;
-import io.appium.java_client.AppiumBy;
+//import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidTouchAction;
 
 public class GeneralStore_Tc_4 extends BaseClass {
@@ -27,8 +27,8 @@ public void checkingTheLongPressFunction() throws InterruptedException, Malforme
 		 
 		 Utilities u=new Utilities(driver);
 	//	 WebElement checkbox = u.tapTheCheckbox();
-		 WebElement checkbox = driver.findElement(AppiumBy.androidUIAutomator("text(\"Send me e-mails on discounts related to selected products in future\")"));
-		 new AndroidTouchAction(driver).tap(tapOptions().withElement(element(checkbox))).perform();
+		 //WebElement checkbox = driver.findElement(AppiumBy.androidUIAutomator("text(\"Send me e-mails on discounts related to selected products in future\")"));
+		 //new AndroidTouchAction(driver).tap(tapOptions().withElement(element(checkbox))).perform();
 		 
 		
 		 WebElement termsofcondition = cop.btnTermsOfCondition;
