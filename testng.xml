@@ -10,8 +10,12 @@
   <test name="GeneralStore_Tc_1">
   
     <classes>
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
-      <!-- <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2"/> 
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3"/>
+
+ 
+      
+ 
+      <!-- <class name="com.MobileAutomationDemo.TestCases."/> 
       <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3"/>
       <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_4"/> 
       <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_5"/> -->

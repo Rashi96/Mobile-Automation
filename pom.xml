@@ -48,7 +48,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    
+        
     <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 	<dependency>
       <groupId>io.appium</groupId>
@@ -62,6 +62,12 @@
       <artifactId>testng</artifactId>
       <version>6.9.10</version>
 	</dependency>
+	
+	<dependency>
+  <groupId>com.github.adiralashiva8</groupId>
+  <artifactId>testng-metrics</artifactId>
+  <version>1.5</version>
+</dependency>
 	
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
 	<dependency>

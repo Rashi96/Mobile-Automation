@@ -1,33 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Mobile Automation Demo" duration-ms="43250" started-at="2022-05-30T06:17:53Z" finished-at="2022-05-30T06:18:36Z">
+  <suite name="Mobile Automation Demo" duration-ms="139035" started-at="2022-06-05T05:03:06Z" finished-at="2022-06-05T05:05:25Z">
     <groups>
     </groups>
-    <test name="GeneralStore_Tc_1" duration-ms="43250" started-at="2022-05-30T06:17:53Z" finished-at="2022-05-30T06:18:36Z">
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1">
-        <test-method status="PASS" signature="startServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="startServer" is-config="true" duration-ms="10033" started-at="2022-05-30T11:47:53Z" finished-at="2022-05-30T11:48:03Z">
+    <test name="GeneralStore_Tc_1" duration-ms="139035" started-at="2022-06-05T05:03:06Z" finished-at="2022-06-05T05:05:25Z">
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo">
+        <test-method status="PASS" signature="startServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.MobileDemo@5f9d02cb]" name="startServer" is-config="true" duration-ms="10024" started-at="2022-06-05T10:33:06Z" finished-at="2022-06-05T10:33:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startServer -->
-        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="setCapabilities" is-config="true" duration-ms="18125" started-at="2022-05-30T11:48:03Z" finished-at="2022-05-30T11:48:21Z">
+        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.MobileDemo@5f9d02cb]" name="setCapabilities" is-config="true" duration-ms="35118" started-at="2022-06-05T10:33:16Z" finished-at="2022-06-05T10:33:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCapabilities -->
-        <test-method status="PASS" signature="validateToastMessage()[pri:1, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="validateToastMessage" duration-ms="4634" started-at="2022-05-30T11:48:21Z" finished-at="2022-05-30T11:48:26Z">
+        <test-method status="FAIL" signature="validateToastMessage()[pri:1, instance:com.MobileAutomationDemo.TestCases.MobileDemo@5f9d02cb]" name="validateToastMessage" duration-ms="8797" started-at="2022-06-05T10:33:51Z" finished-at="2022-06-05T10:34:00Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.xpath: //android.widget.Toast[1]' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H504DAA', ip: '192.168.8.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\User\eclipse-works..., appPackage: com.androidsample.generalstore, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\User\eclipse-works..., automationName: uiautomator2, deviceName: Mobile, newCommandTimeout: 14, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 14, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1815, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ade2e1ee-71e9-4573-9cd1-f3b84c1e5f19]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.Toast[1]' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H504DAA', ip: '192.168.8.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\User\eclipse-works..., appPackage: com.androidsample.generalstore, automationName: uiautomator2, databaseEnabled: false, desired: {app: C:\Users\User\eclipse-works..., automationName: uiautomator2, deviceName: Mobile, newCommandTimeout: 14, noReset: false, platformName: android}, deviceApiLevel: 32, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 14, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1815, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ade2e1ee-71e9-4573-9cd1-f3b84c1e5f19
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getAttribute(<generated>)
+	at com.MobileAutomationDemo.TestCases.MobileDemo.validateToastMessage(MobileDemo.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateToastMessage -->
-        <test-method status="PASS" signature="productsPageNavigation()[pri:2, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="productsPageNavigation" duration-ms="10200" started-at="2022-05-30T11:48:26Z" finished-at="2022-05-30T11:48:36Z">
+        <test-method status="PASS" signature="productsPageNavigation()[pri:2, instance:com.MobileAutomationDemo.TestCases.MobileDemo@5f9d02cb]" name="productsPageNavigation" duration-ms="17028" started-at="2022-06-05T10:34:04Z" finished-at="2022-06-05T10:34:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsPageNavigation -->
-        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="stopServer" is-config="true" duration-ms="13" started-at="2022-05-30T11:48:36Z" finished-at="2022-05-30T11:48:36Z">
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.MobileDemo@5f9d02cb]" name="stopServer" is-config="true" duration-ms="12" started-at="2022-06-05T10:35:25Z" finished-at="2022-06-05T10:35:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
-      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1 -->
+      </class> <!-- com.MobileAutomationDemo.TestCases.MobileDemo -->
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo2">
+        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.MobileDemo2@63753b6d]" name="setCapabilities" is-config="true" duration-ms="31360" started-at="2022-06-05T10:34:21Z" finished-at="2022-06-05T10:34:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCapabilities -->
+        <test-method status="FAIL" signature="validateCharctersofName()[pri:1, instance:com.MobileAutomationDemo.TestCases.MobileDemo2@63753b6d]" name="validateCharctersofName" duration-ms="29696" started-at="2022-06-05T10:34:52Z" finished-at="2022-06-05T10:35:22Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.Toast[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getAttribute(<generated>)
+	at com.MobileAutomationDemo.TestCases.MobileDemo2.validateCharctersofName(MobileDemo2.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@73db4768 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.Toast[1]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-H504DAA', ip: '192.168.8.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCharctersofName -->
+      </class> <!-- com.MobileAutomationDemo.TestCases.MobileDemo2 -->
     </test> <!-- GeneralStore_Tc_1 -->
   </suite> <!-- Mobile Automation Demo -->
 </testng-results>

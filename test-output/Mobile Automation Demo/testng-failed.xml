@@ -6,7 +6,26 @@
   </listeners>
   <test name="GeneralStore_Tc_1">
     <classes>
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1"/>
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo"/>
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo2"/>
     </classes>
   </test> <!-- GeneralStore_Tc_1 -->
+  <test name="GeneralStore_Tc_1(failed)">
+    <classes>
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo2">
+        <methods>
+          <include name="setCapabilities"/>
+          <include name="validateCharctersofName"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.MobileDemo2 -->
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo">
+        <methods>
+          <include name="stopServer"/>
+          <include name="startServer"/>
+          <include name="setCapabilities"/>
+          <include name="validateToastMessage"/>
+        </methods>
+      </class> <!-- com.MobileAutomationDemo.TestCases.MobileDemo -->
+    </classes>
+  </test> <!-- GeneralStore_Tc_1(failed) -->
 </suite> <!-- Failed suite [Mobile Automation Demo] -->

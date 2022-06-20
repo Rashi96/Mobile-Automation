@@ -6,11 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.MobileAutomationDemo.PageObjects.GeneralStorePage;
 import com.MobileAutomationDemo.PageObjects.ProductsPage;
 import com.MobileAutomationDemo.Utilities.Utilities;
-
 import io.appium.java_client.MobileBy;
 
 public class GeneralStore_Tc_3 extends BaseClass{

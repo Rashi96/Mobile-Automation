@@ -18,6 +18,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class GeneralStore_Tc_2 extends BaseClass {
 	
 	public static String productName = "Jordan 6 Rings";
+	public static String wrongproductName = "Jordan 6 Rings";
 	
 	@Test
 	public void validateAddToCartOption() throws InterruptedException, MalformedURLException{
@@ -49,7 +50,7 @@ public class GeneralStore_Tc_2 extends BaseClass {
 	     	    
 	     String productInCart = pp.lblProduct.getText();
 
-	     Assert.assertEquals(productInCart, productName);
+	     Assert.assertEquals(productInCart, wrongproductName);
 	     System.out.println("Validation success. Expected product is added to cart");
 		
 	}

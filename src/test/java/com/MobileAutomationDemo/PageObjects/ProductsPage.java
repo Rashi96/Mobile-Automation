@@ -42,8 +42,8 @@ public class ProductsPage {
 	@AndroidFindBy(id="com.androidsample.generalstore:id/totalAmountLbl")
 	public WebElement lbltotalAmount;
 	
-	
-	
+	@AndroidFindBy(id="com.androidsample.generalstore:id/productPrice")
+	public WebElement lbltotalAmountWrong;
 	
 	
 	

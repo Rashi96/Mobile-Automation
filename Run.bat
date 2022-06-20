@@ -1,2 +1,2 @@
-cd C:\Users\itsre\Desktop\Wireapps\Mobile_Automation\Projects\Demo\MobileAutomationDemo
+cd C:\Users\User\eclipse-workspace\Mobile-Automation
 mvn clean install

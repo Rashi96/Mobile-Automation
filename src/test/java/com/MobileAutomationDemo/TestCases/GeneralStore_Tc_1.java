@@ -13,11 +13,13 @@ public class GeneralStore_Tc_1 extends BaseClass{
 	public static String name = "John Doe";
 	
 	@Test(priority = 1)
-	public void validateToastMessage(){
+	public void validateToastMessage() throws InterruptedException{
 		
 		GeneralStorePage gsp = new GeneralStorePage(driver);
 		
 		gsp.btnLetsShop.click();
+		
+		Thread.sleep(8000);
 		
 		String toastMessage = gsp.lblToastMsg.getAttribute("name");
 		Assert.assertEquals(expectedMessage, toastMessage);
