@@ -8,7 +8,7 @@ import com.MobileAutomationDemo.PageObjects.GeneralStorePage;
 import com.MobileAutomationDemo.PageObjects.ProductsPage;
 import com.MobileAutomationDemo.Utilities.Utilities;
 
-public class MobileDemo extends BaseClass{
+public class MobileDemo extends BaseClass_Cloud{
 	
 	public static String expectedMessage = "Please enter your name";
 	public static String country = "Australia";

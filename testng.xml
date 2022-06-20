@@ -10,7 +10,7 @@
   <test name="GeneralStore_Tc_1">
   
     <classes>
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3"/>
+      <class name="com.MobileAutomationDemo.TestCases.MobileDemo"/>
 
  
       
